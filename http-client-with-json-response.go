@@ -1,8 +1,9 @@
 package main
 
 import (
-	"bufio"
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"net/http"
 	"time"
 )
@@ -23,11 +24,21 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	defer resp.Body.Close()
 
 	p(resp.Status)
-	scanner := bufio.NewScanner(resp.Body)
+	/*scanner := bufio.NewScanner(resp.Body)
 	for scanner.Scan() {
 		p(scanner.Text())
+	}*/
+
+	//Unmarshalling JSON
+	var result map[string]interface{}
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		panic(err)
 	}
+	json.Unmarshal(body, &result)
+	p(result["menu"])
 
 }
