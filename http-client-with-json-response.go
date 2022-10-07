@@ -45,3 +45,13 @@ func main() {
 	p(id["id"])
 
 }
+
+
+/*
+Output:
+
+200 OK
+map[id:file popup:map[menuitem:[map[onclick:CreateNewDoc() value:New] map[onclick:OpenDoc() value:Open] map[onclick:CloseDoc() value:Close]]] value:File]
+file
+
+*/
