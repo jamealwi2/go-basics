@@ -41,4 +41,7 @@ func main() {
 	json.Unmarshal(body, &result)
 	p(result["menu"])
 
+	id := result["menu"].(map[string]interface{})
+	p(id["id"])
+
 }
