@@ -1,0 +1,8 @@
+02:22:08.979 [pool-5-thread-1] INFO  192.45.12.56 is active
+02:22:14.081 [pool-5-thread-1] INFO  192.45.12.56 is connected to 173.24.35.67
+02:22:14.105 [pool-5-thread-1] ERROR  192.168.0.0 is inactive
+02:22:14.105 [pool-5-thread-1] ERROR  456.2.34.12 is inactive
+02:22:19.190 [pool-5-thread-1] ERROR  10.46.12.56 is inactive
+02:22:19.218 [pool-5-thread-1] ERROR  192.46.12.56 could not connect to 10.46.12.506
+02:22:19.218 [pool-5-thread-1] ERROR  FE80:0000:0000:0000:0202:B3FF:FE1E:8329 is dead
+02:22:19.218 [pool-5-thread-1] INFO  FE20:0000:0000:0000:0202:B3FF:FE1E:8326 is active
